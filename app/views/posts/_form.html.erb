@@ -1,0 +1,12 @@
+<div class='container'>
+<div class='row col-xs-6 col-xs-offset-3'>
+<%= form_for @post do |f|%>
+<ul class='list-unstyled'>
+<li> <%= f.label :title %></li><br>
+<li><%= f.text_field :title %></li><br>
+<li> <%= f.label :content %></li><br>
+<li><%= f.text_area :content %></li><br>
+<%= f.submit %>
+<% end %>
+</div>
+</div>
